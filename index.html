@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8"/>
     <script src="https://kit.fontawesome.com/fb0821e986.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">   
-    <title>Booki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> <!--raleway bold-->
+    <title>Booki - Hébergements pour des vacances de rêve</title>
 </head>
 <body>
   <header>
     <nav>
         <a href="#"><img src="Images/logo/Booki.png" alt="logo booki" width="61.09" height="19"></a>
         <div class="navigation">
-            <!--menu - rajouter ancre aux deux liens-->
-            <a href="#">Hébergements</a>
-            <a href="#">Activités</a>
+            <a href="#hebergements">Hébergements</a>
+            <a href="#activites">Activités</a>
         </div>
     </nav>
     <div class="headerElements"> <!--éléments à aligner à gauche-->
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="headerParagraphs">En plein centre ville ou en pleine nature</p>
-        <!--formulaire recherche à mettre ici-->
-        <form>
+        <form id="barreRecherche" action="" method="GET">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Marseille, France">
-            <input type="submit" value="Rechercher">  
+            <input id="champsSaisie" type="search" placeholder="Marseille, France">
+            <button id="bouttonRecherche" type="submit" value="rechercher">Rechercher</button>
         </form>
-        <!--barre filtres-->
         <div id="barreFiltres">
             <h3>Filtres</h3>
             <button>
@@ -47,15 +46,15 @@
         </div>
         <div>
             <i class="fa-solid fa-info"></i>
-            <h6>Plus de 500 logements sont disponibles dans cette ville</h6>
+            <p class="headerParagraphs">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </div>
   </header>
   <main>
     <div id="topMain">
-        <section id="hébergements">
+        <section id="hebergements">
             <h2>Hébergements à Marseille</h2>
-            <div id="cartesHébergement"> <!--étoiles à rajouter-->
+            <div id="cartesHebergement">
                 <article>
                     <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image de l'auberge" >
                     <h5>Auberge La Canebière</h5>
@@ -129,9 +128,9 @@
                     </div>
                 </article>
             </div>
-            <a href="#"><h3>Afficher plus</h3></a> <!--h3 ou rien?-->
+            <a href="#"><h3>Afficher plus</h3></a>
         </section>
-        <section id="populaires">
+        <aside id="populaires">
             <h2>Les plus populaires</h2>
             <i class="fa-solid fa-chart-line"></i>
             <div id="cartesPopulaires">
@@ -172,11 +171,11 @@
                     </div>  
                 </article>
             </div>
-        </section>
+        </aside>
     </div>
-    <section id="activités">
+    <section id="activites">
         <h2>Activités à Marseille</h2>
-        <div id="cartesActivités">
+        <div id="cartesActivites">
             <article>
                 <img src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image de l'hôtel" >
                 <h5>Vieux-Port</h5>
