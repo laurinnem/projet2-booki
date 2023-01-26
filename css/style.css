@@ -1,0 +1,331 @@
+body {
+    max-width: 1400px;
+}
+* {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+h1, h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/*header*/
+
+#navHeader {
+    margin: 0px 77px 63px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navLogo {
+    margin-top: 44px;
+    margin-left: 45px;
+}
+#navHebergements {
+    padding-top: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navActivites {
+    padding-top: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu {
+    height: px;
+    width: 280px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#navHebergements:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+#navActivites:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+.headerElements {
+    margin-left: 45px;
+}
+#barreRecherche {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+#iconeGeo {
+    width: 50px;
+    height: 49px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+#iconeGeo .fa-solid {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    color:black;
+}
+#champsSaisie {
+    width: 232px;
+    height: 49px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+input[placeholder] {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+#bouttonRecherche {
+    width: 132px;
+    height: 49px;
+    background-color: #0065FC;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+}
+#barreFiltres {
+    margin-left:  7px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+} 
+.boutonsFiltres {
+    height: 45px;
+    align-items: center;
+    margin: 6px 20px 0px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D9D9D9;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+
+}
+.boutonsFiltres:hover {
+    background-color: #BEEDFF;
+}
+.fa-solid {
+    font-size: 22px;
+    color: #0065FC;
+    margin-right: 10px;
+    margin-left: 15px;
+    background-color: transparent;
+}
+.p18gras {
+    font-size: 18px;
+    font-weight: 700;
+}
+.txtFiltres {
+    font-size: 17px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 15px;
+}
+#ligneInfo {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#iconeInfo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+}
+#iconeInfo .fa-solid {
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.headerParagraphs {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*main*/
+#topMain {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: ;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+#hebergements > h2 {
+    margin: 50px 0px 0px 17px;
+}
+#afficherPlus {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 40px 0px 40px 17px;
+}
+.nomsHotels {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0px -8px 15px;
+}
+.prixHebergement {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.etoiles {
+    margin-left: 15px;
+}
+.nomsActivites {
+    font-size: 16px;
+    font-weight: 700;
+}
+#hebergements{
+    max-width: 895px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#cartesHebergement {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#cartesHebergement > a > article {
+    width: 231px;
+    height: 199px; 
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: 14px;
+    margin-right: 14px;
+    box-shadow: 0 4px 8px 0 #D9D9D9;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+#cartesHebergement > a > article > img {
+    width: auto;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+}
+#legendesCartesHebergement {
+   
+}
+.etoiles .fa-solid {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.etoiles .fa-solid:nth-child(5) {
+    color:#D9D9D9; 
+}
+
+#populaires {
+    max-width: 420px;
+    max-height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 42px 40px 46px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#titreIconePolulaires {
+
+}
+#titreIconePolulaires .fa-solid {
+
+}
+#cartesPopulaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+#cartesPopulaires > article {
+    width: 343px;
+    height: 144px; 
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+
+}
+#cartesPopulaires > article > img {
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+
+/*footer*/
+
+#blocFooter {
+    max-width: 1400px;
+    width: 1339;
+    height: 225px; /*? x responsive*/
+    margin-left: 48px;
+    margin-right: 53px;
+    margin-bottom: 0px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+}
+ul {
+    list-style: none;
+}
+h3 {
+    font-size: 18px; 
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.txtFooter {
+    font-size: 16px;
+    font-weight: 400;
+}
+#leftFooter, #centralFooter, #rightFooter {
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 30px;
+   
+}
+.txtFooter {
+    
+}
+
+
+
+/*:nth-child(5) x dernière étoile en gris*/
