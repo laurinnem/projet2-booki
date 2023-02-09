@@ -578,7 +578,7 @@ h3 {
     }
     #cartesHebergement {
         width: 100%;
-        flex-direction: column wrap;
+        flex-flow: column wrap;
         align-items: center;
     }
     #cartesHebergement > a {
