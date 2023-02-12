@@ -21,7 +21,7 @@ button {
 }
 /*header*/
 header {
-    width: 90%;
+    max-width: 1400px;
     margin: 0px 50px 0px 50px;
     display: flex;
     flex-flow: column wrap;
@@ -93,7 +93,7 @@ header {
     color:black;
 }
 #champsSaisie {
-    width: 232px;
+    width: 217px;
     height: 49px;
     margin-left: 0px;
     margin-right: 0px;
@@ -118,8 +118,10 @@ input[placeholder] {
     border: none;
     border-radius: 0px 15px 15px 0px;
 }
+#bouttonLoupe {       
+    visibility: hidden;
+}
 #barreFiltres {
-    margin-left:  7px;
     margin-bottom: 10px;
     display:flex;
     justify-content: flex-start;
@@ -140,7 +142,7 @@ input[placeholder] {
     height: 45px;
     display: flex;
     align-items: center;
-    margin: 6px 8px 0px 10px;
+    margin: 6px 18px 0px 0px;
     border-style: solid;
     border-width: 2px;
     border-color: #D9D9D9;
@@ -159,6 +161,7 @@ input[placeholder] {
 .p18gras {
     font-size: 18px;
     font-weight: 700;
+    padding-right: 10px;
 }
 .txtFiltres {
     font-size: 17px;
@@ -304,13 +307,16 @@ p {
     margin: 20px 25px -15px 0px;
 }
 #cartesPopulaires {
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 #cartesPopulaires > a {
     width: 86%;
-    margin: 10px 15px 20px 10px;
+    display: flex;
+    align-content: center;
+    margin: 10px 10px 10px 10px;
 }
 #cartesPopulaires > a > article {
     width: 100%;
@@ -422,12 +428,6 @@ h3 {
     margin-right: 10%;
     margin-top: 2%;
 }
-/*desktop+tablette*/
-@media screen and (min-width: 769px) {
-    #bouttonLoupe {       
-        display: none;
-    }
-}
 /*tablette*/
 @media screen and (max-width: 992px) {
     #hebergements{
@@ -443,7 +443,14 @@ h3 {
         justify-content: space-evenly;
     }
     #cartesPopulaires > a {
-        width: 28%;
+        width: 29%;
+    }
+    #cartesActivites > a > article > img {
+        height: 80%;
+        border-radius: 17px 17px 0px 0px;
+    }
+    .legendesActivites {
+        height: 20%;
     }
 }
 /*mobile*/
@@ -453,7 +460,7 @@ h3 {
         width: 100%;
     }
     #navHeader {
-        margin: 0px 0px 5px 0px;
+        padding: 0px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -480,7 +487,7 @@ h3 {
     }
     .menu {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 10px;
         margin-bottom: 15px;
     }
     #navHebergements:hover {
@@ -495,11 +502,26 @@ h3 {
         color: #0065FC;
         font-weight: 500 ;
     }
+    h1 {
+        margin-right: 5%;
+    }
+    .headerParagraphs {
+        margin-right: 5%;
+    }
     .headerElements {
+        padding: 0;
         margin-left: 5%;
+        margin-right: 5%;
     }
     #bouttonRecherche {
         display: none;
+    }
+    #bouttonLoupe {       
+        visibility: visible;
+    }
+    #champsSaisie {
+            width: 80%;
+            max-width: 300px; 
     }
     #bouttonLoupe {
         width: 49px;
@@ -511,10 +533,20 @@ h3 {
     #bouttonLoupe > i {
         color: white;
     }
+    #barreFiltres {
+        flex-flow: column wrap;
+    }
+    .p18gras {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .petitConteneurFiltres {
+        flex-flow: column wrap;
+    }
     .bouttonsFiltres {
         width: 160px;
         height: 45px;
-        margin: 6px 8px 0px 0px;
+        margin: 6px 10px 6px 0px;
     }
     .txtFiltres {
         font-size: 11px;
@@ -565,7 +597,7 @@ h3 {
     }
     #cartesPopulaires > a {
         width: 90%;
-        margin: 5px 10px 15px 10px;
+        margin: 10px 10px 10px 10px;
     }
     #cartesPopulaires > a > article > img {
         height: 144px;
